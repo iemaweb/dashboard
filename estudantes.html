@@ -37,6 +37,8 @@
     <!-- Template Main CSS File -->
     <link href="assets/css/style.css" rel="stylesheet" />
 
+    <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
+
   </head>
 
   <body>
@@ -215,187 +217,27 @@
 
     <main id="main" class="main">
       <div class="pagetitle">
-        <h1>Dashboard</h1>
+        <h1>Estudantes</h1>
         <nav>
           <ol class="breadcrumb">
             <li class="breadcrumb-item"><a href="index.html">Home</a></li>
-            <li class="breadcrumb-item active">Dashboard</li>
+            <li class="breadcrumb-item active">Estudantes</li>
           </ol>
         </nav>
       </div>
       <!-- End Page Title -->
 
-      <section class="dashboard">
-        <div class="row">
-          <!-- Left side columns -->
-          <div class="col-lg-12">
-            <div class="row">
-              <!-- UNIDADES Card -->
-              <div class="col-xxl-4 col-md-4">
-                <div class="card info-card customers-card">
-                  <a href="unidades.html">
-                  <div class="card-body">
-                    <h5 class="card-title">Unidades</h5>
 
-                    <div class="d-flex align-items-center">
-                      <div
-                        class="card-icon rounded-circle d-flex align-items-center justify-content-center"
-                      >
-                        <i class="bi bi-building"></i>
-                      </div>
-                      <div class="ps-3">
-                        <h6>44</h6>
-                      </div>
-                    </div>
-                  </div>
-                </a>
-                </div>
-              </div>
-              <!-- UNIDADES Card -->
-
-              <!-- ESTUDANTES Card -->
-              <div class="col-xxl-4 col-md-4">
-                <div class="card info-card sales-card">
-                  <a href="estudantes.html">
-                  <div class="card-body">
-                    <h5 class="card-title">Estudantes</h5>
-
-                    <div class="d-flex align-items-center">
-                      <div
-                        class="card-icon rounded-circle d-flex align-items-center justify-content-center"
-                      >
-                        <i class="bi bi-people"></i>
-                      </div>
-                      <div class="ps-3">
-                        <h6>17868</h6>
-                      </div>
-                    </div>
-                  </div>
-                  </a>
-                </div>
-              </div>
-              <!-- ESTUDANTES Card -->
-
-              <!-- PROFESSORES Card -->
-              <div class="col-xxl-4 col-md-4">
-                <div class="card info-card revenue-card">
-                  <div class="card-body">
-                    <h5 class="card-title">Professores</h5>
-
-                    <div class="d-flex align-items-center">
-                      <div
-                        class="card-icon rounded-circle d-flex align-items-center justify-content-center"
-                      >
-                        <i class="bi bi-person-badge"></i>
-                      </div>
-                      <div class="ps-3">
-                        <h6>1653</h6>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <!-- PROFESSORES Card -->
-
-              <!-- CURSOS Card -->
-              <div class="col-xxl-4 col-md-4">
-                <div class="card info-card customers-card">
-                  <div class="card-body">
-                    <h5 class="card-title">Cursos</h5>
-
-                    <div class="d-flex align-items-center">
-                      <div
-                        class="card-icon rounded-circle d-flex align-items-center justify-content-center"
-                      >
-                        <i class="bi bi-gear"></i>
-                      </div>
-                      <div class="ps-3">
-                        <h6>45</h6>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <!-- CURSOS Card -->
-
-              <!-- EIXOS Card -->
-              <div class="col-xxl-4 col-md-4">
-                <div class="card info-card sales-card">
-                  <div class="card-body">
-                    <h5 class="card-title">Eixos Tecnológicos</h5>
-
-                    <div class="d-flex align-items-center">
-                      <div
-                        class="card-icon rounded-circle d-flex align-items-center justify-content-center"
-                      >
-                        <i class="bi bi-laptop"></i>
-                      </div>
-                      <div class="ps-3">
-                        <h6>11</h6>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <!-- CURSOS Card -->
-
-              <!-- IDEB Card -->
-              <div class="col-xxl-4 col-md-4">
-                <div class="card info-card revenue-card">
-                  <div class="card-body">
-                    <h5 class="card-title">IDEB</h5>
-
-                    <div class="d-flex align-items-center">
-                      <div
-                        class="card-icon rounded-circle d-flex align-items-center justify-content-center"
-                      >
-                        <i class="bi bi-graph-up"></i>
-                      </div>
-                      <div class="ps-3">
-                        <h6>+5</h6>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <!-- CURSOS Card -->
-
-              <!-- PE DE MEIA Card -->
-              <div class="col-xxl-4 col-md-4">
-                <div class="card info-card customers-card">
-                  <div class="card-body">
-                    <h5 class="card-title">Pé-de-Meia</h5>
-
-                    <div class="d-flex align-items-center">
-                      <div
-                        class="card-icon rounded-circle d-flex align-items-center justify-content-center"
-                      >
-                        <i class="bi bi-piggy-bank"></i>
-                      </div>
-                      <div class="ps-3">
-                        <h6>14773</h6>
-                        <small
-                          >Elegíveis
-                        </small>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <!-- PE DE MEIA Card -->
-
-
-  
-
+      <div class="cardDef p-4">
+        <div id="chart2"></div>
+      </div>
 
       
-            </div>
-          </div>
-          <!-- End Left side columns -->
+     
 
 
-        </div>
-      </section>
+
+
     </main>
     <!-- End #main -->
 
@@ -423,5 +265,47 @@
 
     <!-- Template Main JS File -->
     <script src="assets/js/main.js"></script>
+
+
+    <script>
+      // Dados da nova tabela
+      var newData = {
+          years: ['2016', '2017', '2018', '2019', '2020', '2021', '2022', '2023', '2024'],
+          quantities: [750, 1350, 3250, 4038, 8140, 9137, 11660, 14007, 18099]
+      };
+
+      // Configuração do gráfico de colunas
+      var options2 = {
+          chart: {
+              type: 'bar',
+              height: 400
+          },
+          series: [{
+              name: 'Quantidade',
+              data: newData.quantities
+          }],
+          xaxis: {
+              categories: newData.years,
+              title: {
+                  text: 'Ano'
+              }
+          },
+          yaxis: {
+              title: {
+                  text: 'Quantidade'
+              }
+          },
+          title: {
+              text: 'Evolução de matrículas por ano',
+              align: 'center'
+          }
+      };
+
+      // Renderizando o segundo gráfico
+      var chart2 = new ApexCharts(document.querySelector("#chart2"), options2);
+      chart2.render();
+  </script>
+
+
   </body>
 </html>
