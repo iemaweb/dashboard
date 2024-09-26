@@ -225,6 +225,7 @@ h6 {
   border-radius: 5px;
   box-shadow: 0px 0 30px rgba(1, 41, 112, 0.1);
   transition: background-color 0.4s ease-out, transform 0.4s ease-out;
+  background-color: white;
 }
 
 
