@@ -206,7 +206,7 @@
             <!-- UNIDADES Card -->
             <div class="col-xxl-6 col-md-6">
               <div class="card info-card customers-card">
-                <a href="unidades.html">
+                <a href="#">
                   <div class="card-body">
                     <h5 class="card-title">Expectativa de formandos – TURMAS IEMA</h5>
 
@@ -224,26 +224,26 @@
             </div>
             <!-- UNIDADES Card -->
 
-              <!-- UNIDADES Card -->
-              <div class="col-xxl-6 col-md-6">
-                <div class="card info-card customers-card">
-                  <a href="unidades.html">
-                    <div class="card-body">
-                      <h5 class="card-title">Expectativa de formandos – TODAS TURMAS</h5>
-  
-                      <div class="d-flex align-items-center">
-                        <div class="card-icon rounded-circle d-flex align-items-center justify-content-center">
-                          <i class="bi bi-mortarboard-fill"></i>
-                        </div>
-                        <div class="ps-3">
-                          <h6>5579</h6>
-                        </div>
+            <!-- UNIDADES Card -->
+            <div class="col-xxl-6 col-md-6">
+              <div class="card info-card customers-card">
+                <a href="#">
+                  <div class="card-body">
+                    <h5 class="card-title">Expectativa de formandos – TODAS TURMAS</h5>
+
+                    <div class="d-flex align-items-center">
+                      <div class="card-icon rounded-circle d-flex align-items-center justify-content-center">
+                        <i class="bi bi-mortarboard-fill"></i>
+                      </div>
+                      <div class="ps-3">
+                        <h6>5579</h6>
                       </div>
                     </div>
-                  </a>
-                </div>
+                  </div>
+                </a>
               </div>
-              <!-- UNIDADES Card -->
+            </div>
+            <!-- UNIDADES Card -->
 
           </div>
         </div>
@@ -262,8 +262,38 @@
     <div class="cardDef p-3">
       <h5 class="card-title">Evolução de matrículas por ano</h5>
       <small>*Considerando a data de referência do Censo Escolar</small>
-      <div id="chart2"></div>
+      <div id="chart1"></div>
     </div>
+
+
+
+
+    <div class="col-lg-12">
+      <div class="row">
+
+        <div class="col-xxl-6 col-md-6">
+
+          <div class="cardDef p-3" style="">
+            <h5 class="card-title">Evolução de formandos por ano</h5>
+            <div id="chart2"></div>
+          </div>
+
+        </div>
+
+
+        <div class="col-xxl-6 col-md-6">
+
+          <div class="cardDef p-3" style="">
+            <h5 class="card-title">Somatório de formandos por ano</h5>
+            <div id="chart3"></div>
+          </div>
+
+        </div>
+
+
+      </div>
+    </div>
+
 
 
 
@@ -305,7 +335,7 @@
     };
 
     // Configuração do gráfico de colunas
-    var options2 = {
+    var options1 = {
       chart: {
         type: 'bar',
         height: 400
@@ -332,8 +362,108 @@
     };
 
     // Renderizando o segundo gráfico
+    var chart1 = new ApexCharts(document.querySelector("#chart1"), options1);
+    chart1.render();
+
+
+    //===================== grafics 2 ==================================//
+
+
+    // Dados da nova tabela
+    var newData2 = {
+      years: ['2018', '2019', '2020', '2021', '2022', '2023'],
+      quantities: [323, 801, 1722, 1237, 2605, 3232]
+    };
+
+    // Configuração do gráfico de colunas
+    var options2 = {
+      chart: {
+        type: 'bar',
+        height: 400
+      },
+      series: [{
+        name: 'Quantidade',
+        data: newData2.quantities
+      }],
+      xaxis: {
+        categories: newData2.years,
+        title: {
+          text: 'Ano'
+        }
+      },
+      yaxis: {
+        title: {
+          text: 'Quantidade'
+        }
+      },
+      title: {
+        //text: 'Evolução de matrículas por ano',
+        align: 'center'
+      }
+    };
+
+    // Renderizando o segundo gráfico
     var chart2 = new ApexCharts(document.querySelector("#chart2"), options2);
     chart2.render();
+
+
+    //===================== grafics 3 ==================================//
+
+
+    // Dados da nova tabela
+    var newData3 = {
+      years: ['2018', '2019', '2020', '2021', '2022', '2023'],
+      quantities: [323, 1124, 2846, 4083, 6688, 9920]
+    };
+
+    // Configuração do gráfico de barras horizontais
+    var options3 = {
+      chart: {
+        type: 'bar',
+        height: 400
+      },
+      plotOptions: {
+        bar: {
+          horizontal: true,  // Define as barras como horizontais
+          distributed: true,  // Permite cores únicas para cada barra, se desejado
+          barHeight: '50%'    // Ajusta a altura das barras
+        }
+      },
+      colors: ['#4BA3C3'],  // Define um azul mais claro para todas as barras
+      series: [{
+        name: 'Quantidade',
+        data: newData3.quantities
+      }],
+      xaxis: {
+        categories: newData3.years,
+        title: {
+          text: 'Quantidade',
+          offsetY: -10  // Ajusta a posição do título para mais perto do gráfico
+        },
+        labels: {
+          show: false  // Oculta as legendas dos anos na parte inferior
+        }
+      },
+      yaxis: {
+        title: {
+          text: 'Ano'
+        }
+      },
+      legend: {
+        show: false  // Oculta a legenda com o quadrado azul e o nome da série
+      },
+      title: {
+        //text: 'Evolução de matrículas por ano',
+        align: 'center'
+      }
+    };
+
+    // Renderizando o gráfico
+    var chart3 = new ApexCharts(document.querySelector("#chart3"), options3);
+    chart3.render();
+
+
+
   </script>
 
 

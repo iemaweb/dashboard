@@ -1,576 +1,591 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
 
-    <title>Dados - IEMA</title>
-    <meta content="" name="description" />
-    <meta content="" name="keywords" />
+<head>
+  <meta charset="utf-8" />
+  <meta content="width=device-width, initial-scale=1.0" name="viewport" />
 
-    <!-- Favicons -->
-    <link href="assets/img/favicon.png" rel="icon" />
-    <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon" />
+  <title>Dados - IEMA</title>
+  <meta content="" name="description" />
+  <meta content="" name="keywords" />
 
-    <!-- Google Fonts -->
-    <link href="https://fonts.gstatic.com" rel="preconnect" />
-    <link
-      href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Nunito:300,300i,400,400i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
-      rel="stylesheet"
-    />
+  <!-- Favicons -->
+  <link href="assets/img/favicon.png" rel="icon" />
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon" />
 
-    <!-- Vendor CSS Files -->
-    <link
-      href="assets/vendor/bootstrap/css/bootstrap.min.css"
-      rel="stylesheet"
-    />
-    <link
-      href="assets/vendor/bootstrap-icons/bootstrap-icons.css"
-      rel="stylesheet"
-    />
-    <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet" />
-    <link href="assets/vendor/quill/quill.snow.css" rel="stylesheet" />
-    <link href="assets/vendor/quill/quill.bubble.css" rel="stylesheet" />
-    <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet" />
-    <link href="assets/vendor/simple-datatables/style.css" rel="stylesheet" />
+  <!-- Google Fonts -->
+  <link href="https://fonts.gstatic.com" rel="preconnect" />
+  <link
+    href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Nunito:300,300i,400,400i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
+    rel="stylesheet" />
 
-    <!-- Template Main CSS File -->
-    <link href="assets/css/style.css" rel="stylesheet" />
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet" />
+  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet" />
+  <link href="assets/vendor/quill/quill.snow.css" rel="stylesheet" />
+  <link href="assets/vendor/quill/quill.bubble.css" rel="stylesheet" />
+  <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet" />
+  <link href="assets/vendor/simple-datatables/style.css" rel="stylesheet" />
 
-    <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
+  <!-- Template Main CSS File -->
+  <link href="assets/css/style.css" rel="stylesheet" />
 
-  </head>
+  <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
 
-  <body>
-    <!-- ======= Header ======= -->
-    <header id="header" class="header fixed-top d-flex align-items-center">
-      <div class="d-flex align-items-center justify-content-between">
-        <a href="index.html" class="logo d-flex align-items-center">
-          <img src="assets/img/logo.png" alt="" />
-          <!-- <span class="d-none d-lg-block">NiceAdmin</span> -->
-        </a>
-        <i class="bi bi-list toggle-sidebar-btn"></i>
-      </div>
-      <!-- End Logo -->
+</head>
 
-      <nav class="header-nav ms-auto">
-        <ul class="d-flex align-items-center">
-          <li class="nav-item dropdown">
-            <a class="nav-link nav-icon" href="#" data-bs-toggle="dropdown">
-              <span class="">2024</span> </a
-            ><!-- End Messages Icon -->
+<body>
+  <!-- ======= Header ======= -->
+  <header id="header" class="header fixed-top d-flex align-items-center">
+    <div class="d-flex align-items-center justify-content-between">
+      <a href="index.html" class="logo d-flex align-items-center">
+        <img src="assets/img/logo.png" alt="" />
+        <!-- <span class="d-none d-lg-block">NiceAdmin</span> -->
+      </a>
+      <i class="bi bi-list toggle-sidebar-btn"></i>
+    </div>
+    <!-- End Logo -->
 
-            <ul
-              class="dropdown-menu dropdown-menu-end dropdown-menu-arrow messages"
-            >
-              <li class="message-item">
-                <p>2023</p>
-              </li>
-              <li class="message-item">
-                <p>2022</p>
-              </li>
-              <li class="message-item">
-                <p>2021</p>
-              </li>
-            </ul>
-            <!-- End Messages Dropdown Items -->
-          </li>
-          <!-- End Messages Nav -->
+    <nav class="header-nav ms-auto">
+      <ul class="d-flex align-items-center">
+        <li class="nav-item dropdown">
+          <a class="nav-link nav-icon" href="#" data-bs-toggle="dropdown">
+            <span class="">2024</span> </a><!-- End Messages Icon -->
 
-          <li class="nav-item dropdown pe-3">
-            <a
-              class="nav-link nav-profile d-flex align-items-center pe-0"
-              href="#"
-              data-bs-toggle="dropdown"
-            >
-              <img
-                src="assets/img/profile-img.jpg"
-                alt="Profile"
-                class="rounded-circle"
-              />
-              <span class="d-none d-md-block dropdown-toggle ps-2"
-                >Olá! Abenaias</span
-              > </a
-            ><!-- End Profile Iamge Icon -->
-
-            <ul
-              class="dropdown-menu dropdown-menu-end dropdown-menu-arrow profile"
-            >
-        
-
-              <li>
-                <a class="dropdown-item d-flex align-items-center" href="#">
-                  <i class="bi bi-box-arrow-right"></i>
-                  <span>Sign Out</span>
-                </a>
-              </li>
-            </ul>
-            <!-- End Profile Dropdown Items -->
-          </li>
-          <!-- End Profile Nav -->
-        </ul>
-      </nav>
-      <!-- End Icons Navigation -->
-    </header>
-    <!-- End Header -->
-
-    <!-- ======= MENU LATERAL ======= -->
-    <aside id="sidebar" class="sidebar">
-      <ul class="sidebar-nav" id="sidebar-nav">
-        <li class="nav-item">
-          <a class="nav-link" href="index.html">
-            <i class="bi bi-grid"></i>
-            <span>Dashboard</span>
-          </a>
-        </li>
-        <!-- End Dashboard Nav -->
-
-        <li class="nav-item">
-          <a class="nav-link collapsed" href="#">
-            <i class="bi bi-building"></i>
-            <span>Unidades</span>
-          </a>
-        </li>
-        <!-- End Dashboard Nav -->
-
-        <li class="nav-item">
-          <a class="nav-link collapsed" href="estudantes.html">
-            <i class="bi bi-people"></i>
-            <span>Estudantes</span>
-          </a>
-        </li>
-        <!-- End Dashboard Nav -->
-
-        <li class="nav-item">
-          <a class="nav-link collapsed" href="index.html">
-            <i class="bi bi-person-badge"></i>
-            <span>Professores</span>
-          </a>
-        </li>
-        <!-- End Dashboard Nav -->
-
-        <li class="nav-item">
-          <a class="nav-link collapsed" href="index.html">
-            <i class="bi bi-gear"></i>
-            <span>Cursos</span>
-          </a>
-        </li>
-        <!-- End Dashboard Nav -->
-
-        <li class="nav-item">
-          <a class="nav-link collapsed" href="index.html">
-            <i class="bi bi-laptop"></i>
-            <span>Eixos Tecnológicos</span>
-          </a>
-        </li>
-        <!-- End Dashboard Nav -->
-
-        <li class="nav-item">
-          <a class="nav-link collapsed" href="index.html">
-            <i class="bi bi-graph-up"></i>
-            <span>IDEB</span>
-          </a>
-        </li>
-        <!-- End Dashboard Nav -->
-
-        <li class="nav-item">
-          <a class="nav-link collapsed" href="index.html">
-            <i class="bi bi-piggy-bank"></i>
-            <span>Pé-de-Meia</span>
-          </a>
-        </li>
-        <!-- End Dashboard Nav -->
-
-        <li class="nav-heading">Variáveis - Admin</li>
-
-        <li class="nav-item">
-          <a
-            class="nav-link collapsed"
-            data-bs-target="#components-nav"
-            data-bs-toggle="collapse"
-            href="#"
-          >
-            <i class="bi bi-menu-button-wide"></i><span>Estrutura</span
-            ><i class="bi bi-chevron-down ms-auto"></i>
-          </a>
-          <ul
-            id="components-nav"
-            class="nav-content collapse"
-            data-bs-parent="#sidebar-nav"
-          >
-            <li>
-              <a href="components-alerts.html">
-                <i class="bi bi-circle"></i><span>Unidades</span>
-              </a>
+          <ul class="dropdown-menu dropdown-menu-end dropdown-menu-arrow messages">
+            <li class="message-item">
+              <p>2023</p>
             </li>
+            <li class="message-item">
+              <p>2022</p>
+            </li>
+            <li class="message-item">
+              <p>2021</p>
+            </li>
+          </ul>
+          <!-- End Messages Dropdown Items -->
+        </li>
+        <!-- End Messages Nav -->
+
+        <li class="nav-item dropdown pe-3">
+          <a class="nav-link nav-profile d-flex align-items-center pe-0" href="#" data-bs-toggle="dropdown">
+            <img src="assets/img/profile-img.jpg" alt="Profile" class="rounded-circle" />
+            <span class="d-none d-md-block dropdown-toggle ps-2">Olá! Abenaias</span>
+          </a><!-- End Profile Iamge Icon -->
+
+          <ul class="dropdown-menu dropdown-menu-end dropdown-menu-arrow profile">
+
+
             <li>
-              <a href="components-accordion.html">
-                <i class="bi bi-circle"></i><span>Estudantes</span>
+              <a class="dropdown-item d-flex align-items-center" href="#">
+                <i class="bi bi-box-arrow-right"></i>
+                <span>Sign Out</span>
               </a>
             </li>
           </ul>
+          <!-- End Profile Dropdown Items -->
         </li>
-        <!-- End Components Nav -->
+        <!-- End Profile Nav -->
       </ul>
-    </aside>
-    <!-- End  MENU LATERAL-->
+    </nav>
+    <!-- End Icons Navigation -->
+  </header>
+  <!-- End Header -->
 
-    <main id="main" class="main">
-      <div class="pagetitle">
-        <h1>Unidades</h1>
-        <nav>
-          <ol class="breadcrumb">
-            <li class="breadcrumb-item"><a href="index.html">Home</a></li>
-            <li class="breadcrumb-item active">Unidades</li>
-          </ol>
-        </nav>
+  <!-- ======= MENU LATERAL ======= -->
+  <aside id="sidebar" class="sidebar">
+    <ul class="sidebar-nav" id="sidebar-nav">
+      <li class="nav-item">
+        <a class="nav-link" href="index.html">
+          <i class="bi bi-grid"></i>
+          <span>Dashboard</span>
+        </a>
+      </li>
+      <!-- End Dashboard Nav -->
+
+      <li class="nav-item">
+        <a class="nav-link collapsed" href="#">
+          <i class="bi bi-building"></i>
+          <span>Unidades</span>
+        </a>
+      </li>
+      <!-- End Dashboard Nav -->
+
+      <li class="nav-item">
+        <a class="nav-link collapsed" href="estudantes.html">
+          <i class="bi bi-people"></i>
+          <span>Estudantes</span>
+        </a>
+      </li>
+      <!-- End Dashboard Nav -->
+
+      <li class="nav-item">
+        <a class="nav-link collapsed" href="index.html">
+          <i class="bi bi-person-badge"></i>
+          <span>Professores</span>
+        </a>
+      </li>
+      <!-- End Dashboard Nav -->
+
+      <li class="nav-item">
+        <a class="nav-link collapsed" href="index.html">
+          <i class="bi bi-gear"></i>
+          <span>Cursos</span>
+        </a>
+      </li>
+      <!-- End Dashboard Nav -->
+
+      <li class="nav-item">
+        <a class="nav-link collapsed" href="index.html">
+          <i class="bi bi-laptop"></i>
+          <span>Eixos Tecnológicos</span>
+        </a>
+      </li>
+      <!-- End Dashboard Nav -->
+
+      <li class="nav-item">
+        <a class="nav-link collapsed" href="index.html">
+          <i class="bi bi-graph-up"></i>
+          <span>IDEB</span>
+        </a>
+      </li>
+      <!-- End Dashboard Nav -->
+
+      <li class="nav-item">
+        <a class="nav-link collapsed" href="index.html">
+          <i class="bi bi-piggy-bank"></i>
+          <span>Pé-de-Meia</span>
+        </a>
+      </li>
+      <!-- End Dashboard Nav -->
+
+      <li class="nav-heading">Variáveis - Admin</li>
+
+      <li class="nav-item">
+        <a class="nav-link collapsed" data-bs-target="#components-nav" data-bs-toggle="collapse" href="#">
+          <i class="bi bi-menu-button-wide"></i><span>Estrutura</span><i class="bi bi-chevron-down ms-auto"></i>
+        </a>
+        <ul id="components-nav" class="nav-content collapse" data-bs-parent="#sidebar-nav">
+          <li>
+            <a href="components-alerts.html">
+              <i class="bi bi-circle"></i><span>Unidades</span>
+            </a>
+          </li>
+          <li>
+            <a href="components-accordion.html">
+              <i class="bi bi-circle"></i><span>Estudantes</span>
+            </a>
+          </li>
+        </ul>
+      </li>
+      <!-- End Components Nav -->
+    </ul>
+  </aside>
+  <!-- End  MENU LATERAL-->
+
+  <main id="main" class="main">
+    <div class="pagetitle">
+      <h1>Unidades</h1>
+      <nav>
+        <ol class="breadcrumb">
+          <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+          <li class="breadcrumb-item active">Unidades</li>
+        </ol>
+      </nav>
+    </div>
+    <!-- End Page Title -->
+
+
+
+
+    
+    <div class="cardDef p-3">
+      <h5 class="card-title">Quantidade de Inaugurações por Ano</h5>
+      <div id="chart1"></div>
+    </div>
+
+
+
+    <div class="cardDef p-3">
+      <h5 class="card-title">Quantidade de Unidades por Ano</h5>
+      <div id="chart2"></div>
+    </div>
+
+
+
+
+    <div class="cardDef">
+      <div class="card-body">
+
+        <h5 class="card-title">IEMAS PLENOS</h5>
+        <!-- Table with stripped rows -->
+        <table class="table table-striped small">
+          <thead>
+            <tr>
+              <th scope="col">OD</th>
+              <th scope="col">Unidade</th>
+              <th scope="col">Endereço</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row">1</th>
+              <td>IEMA Pleno Açailândia</td>
+              <td>Rua Raimundo Pimentel Filho, Quadra 56, Lote 01, Bairro Nova Açailândia II, CEP 65.930-000,
+                Açailândia- Maranhão</td>
+            </tr>
+            <tr>
+              <th scope="row">2</th>
+              <td>IEMA Pleno Alto Alegre do Pindaré</td>
+              <td>Rua do Sol, s/n Bairro Novo - CEP 65398-000 Alto Alegre do Pindaré/MA</td>
+            </tr>
+            <tr>
+              <th scope="row">3</th>
+              <td>IEMA Pleno Amarante do Maranhão</td>
+              <td>Rua do Poco S/N João de Deus. CEP: 65923-000 Amarante do Maranhão/MA</td>
+            </tr>
+            <tr>
+              <th scope="row">4</th>
+              <td>IEMA Pleno Axixá</td>
+              <td>Rodovia BR 402, Povoado Santa Rosa. CEP: 65148-000 Axixá/MA</td>
+            </tr>
+            <tr>
+              <th scope="row">5</th>
+              <td>IEMA Pleno Bacabal</td>
+              <td>Avenida A C Avenida B, Vila Frei Solano. CEP: 65700-000 Bacabal/MA</td>
+            </tr>
+            <tr>
+              <th scope="row">6</th>
+              <td>IEMA Pleno Bacabeira</td>
+              <td>Rua Humberto de Campos, S/N, Centro. CEP 65143-000 Bacabeira/MA</td>
+            </tr>
+            <tr>
+              <th scope="row">7</th>
+              <td>IEMA Pleno Balsas</td>
+              <td>Rodovia MA, 140 Bairro Veneza CEP. 65800-000 Balsas/MA</td>
+            </tr>
+            <tr>
+              <th scope="row">8</th>
+              <td>IEMA Pleno Brejo</td>
+              <td>Rodovia BR 222/MA 034 – km 18 Povoado do Morro Alegre. CEP 65520-000 Brejo/MA</td>
+            </tr>
+            <tr>
+              <th scope="row">9</th>
+              <td>IEMA Pleno Carutapera</td>
+              <td>Travessa Otávio Correa 1190 CEP 65295-000 Bairro SANTA RITA Carutapera/MA</td>
+            </tr>
+            <tr>
+              <th scope="row">10</th>
+              <td>IEMA Pleno Caxias</td>
+              <td>Avenida General Sampaio, s/n, bairro Morro do Alecrim. Cep: 65604-090 – Caxias - Maranhão</td>
+            </tr>
+            <tr>
+              <th scope="row">11</th>
+              <td>IEMA Pleno Chapadinha</td>
+              <td>Rua Maria Doralice Meneses Pontes, s/n°, Boa Vista, CEP 65220-970 - Chapadinha/MA</td>
+            </tr>
+            <tr>
+              <th scope="row">12</th>
+              <td>IEMA Pleno Codó</td>
+              <td>Avenida Pantanal, s/n, CEP 65400-000 Codó/MA</td>
+            </tr>
+            <tr>
+              <th scope="row">13</th>
+              <td>IEMA Pleno Coelho Neto</td>
+              <td>Rodovia MA-034, Loteamento Bom Sucesso II, Zona Urbana, s/n° - Coelho Neto/MA</td>
+            </tr>
+            <tr>
+              <th scope="row">14</th>
+              <td>IEMA Pleno Colinas – Prof. Graça Saraiva Barroso</td>
+              <td>Rodovia MA 270 - Colinas/MA</td>
+            </tr>
+            <tr>
+              <th scope="row">15</th>
+              <td>IEMA Pleno Coroatá</td>
+              <td>Rodovia MA 020 – Bairro Marior. CEP 65415-000, Coroatá/MA</td>
+            </tr>
+            <tr>
+              <th scope="row">16</th>
+              <td>IEMA Pleno Cururupu</td>
+              <td>Av. Governador Antônio Dino – Rodovia BR 308, Bairro Areia Branca. CEP 65533 Cururupu/MA</td>
+            </tr>
+            <tr>
+              <th scope="row">17</th>
+              <td>IEMA Pleno Imperatriz</td>
+              <td>Rua Dom Evaristo Arnes 1000 Bom Sucesso - CEP 65.905-020 Imperatriz - Maranhão</td>
+            </tr>
+            <tr>
+              <th scope="row">18</th>
+              <td>IEMA Pleno Matões</td>
+              <td>Área Gleba II – Manoel Vieira – Rodovia MA 262 km 01 Bairro Residencial Nova Matões CEP 65645-000
+                Matões/MA</td>
+            </tr>
+            <tr>
+              <th scope="row">19</th>
+              <td>IEMA Pleno Paço do Lumiar</td>
+              <td>AV.13, S/N, Maiobão, Paço do Lumiar-MA - CEP 65130000</td>
+            </tr>
+            <tr>
+              <th scope="row">20</th>
+              <td>IEMA Pleno Pindaré-Mirim</td>
+              <td>Rodovia MA-320 km 4,5 km – Bairro Belo Horizonte. CEP 65370-000 Pindaré Mirim/MA</td>
+            </tr>
+            <tr>
+              <th scope="row">21</th>
+              <td>IEMA Plneo Porto Franco</td>
+              <td>Praça Dom Marcelino, N 360, Bairro Beira Rio - Porto Franco - Cep: 65970-000</td>
+            </tr>
+            <tr>
+              <th scope="row">22</th>
+              <td>IEMA Pleno Presidente Dutra</td>
+              <td>Br 135, Santa Maria. CEP 65760-000 Presidente Dutra/MA</td>
+            </tr>
+            <tr>
+              <th scope="row">23</th>
+              <td>IEMA Pleno Santa Helena - Newton Bello</td>
+              <td>Rua Maria Ferreira, s/n°, Caema - Santa Helena/MA</td>
+            </tr>
+            <tr>
+              <th scope="row">24</th>
+              <td>IEMA Pleno Santa Inês</td>
+              <td>Avenida Brasil, S/N, Bairro Sol Nascente, CEP 65300-000 Santa Inês/MA</td>
+            </tr>
+            <tr>
+              <th scope="row">25</th>
+              <td>IEMA Pleno Santa Luzia do Paruá</td>
+              <td>Av. Principal, S/N, Bairro Cidade Nova. CEP 65272-000 Santa Luzia do Paruá/MA</td>
+            </tr>
+            <tr>
+              <th scope="row">26</th>
+              <td>IEMA Pleno São Domingos</td>
+              <td>Rua São Francisco, SN - Bairro Peniel - São Domingos do Maranhão – MA CEP: 65790-000</td>
+            </tr>
+            <tr>
+              <th scope="row">27</th>
+              <td>IEMA Pleno São José de Ribamar</td>
+              <td>Av. Panaquatira, 824 – Vila Roseana, Bairro Belo Horizonte. CEP 65110-000 São José de Ribamar/MA</td>
+            </tr>
+            <tr>
+              <th scope="row">28</th>
+              <td>IEMA Pleno São Luís – Tamancão</td>
+              <td>R. do Apicum, 6-198 - Anjo da Guarda, São Luís – MA</td>
+            </tr>
+            <tr>
+              <th scope="row">29</th>
+              <td>IEMA Pleno São Luís – Bacelar Portela</td>
+              <td>R. Jorge Damous Bairro Vila Ivar Saldanha nº 120J – São Luís/MA</td>
+            </tr>
+            <tr>
+              <th scope="row">30</th>
+              <td>IEMA Pleno São Luís – Centro</td>
+              <td>Rua Oswaldo Cruz, S/N, Centro – São Luís/MA</td>
+            </tr>
+            <tr>
+              <th scope="row">31</th>
+              <td>IEMA Pleno São Luís – Desembargador Sarney</td>
+              <td>Avenida Lourenço Vieira da Silva, S/Nº, Bairro Primavera-Cohatrac, São Luís/MA</td>
+            </tr>
+            <tr>
+              <th scope="row">32</th>
+              <td>IEMA Pleno São Vicente Ferrer</td>
+              <td>Rua Humberto de Campos, s/n - Bairro Matriz CEP: 65210-000 São Vicente Ferrer/MA</td>
+            </tr>
+            <tr>
+              <th scope="row">33</th>
+              <td>IEMA Pleno Tuntum</td>
+              <td>Rodovia BR 226 – km 339 – Povoado Belém. CEP 65763-000 Tuntum/MA</td>
+            </tr>
+            <tr>
+              <th scope="row">34</th>
+              <td>IEMA Pleno Vargem Grande</td>
+              <td>Rodovia BR-222 – km 160 – Povoado Paulica. CEP 65430-000 Vargem Grande/MA</td>
+            </tr>
+            <tr>
+              <th scope="row">35</th>
+              <td>IEMA Pleno Vitória do Mearim</td>
+              <td>Avenida MA 014 – Vila da Paz – CEP 65350-000 Vitória do Mearim/MA</td>
+            </tr>
+            <tr>
+              <th scope="row">36</th>
+              <td>IEMA Pleno Zé Doca</td>
+              <td>Rua Bahia, S/N, Bairro São Francisco, CEP 65365-000 Zé Doca/MA</td>
+            </tr>
+            <tr>
+              <th scope="row">37</th>
+              <td>IEMA Unidade Vocacional São Luís – Alegria</td>
+              <td>Rua V, nº 02, Bairro Recanto dos Signos, Alegria, São Luís/MA</td>
+            </tr>
+            <tr>
+              <th scope="row">38</th>
+              <td>IEMA Unidade Vocacional São Luís - Itaqui Bacanga</td>
+              <td>Travessa São Domingos, S/N, Itaqui Bacanga - CEP 65085-365 São Luís/MA</td>
+            </tr>
+            <tr>
+              <th scope="row">39</th>
+              <td>IEMA Unidade Vocacional Barreirinhas</td>
+              <td>Avenida Rodoviária S/N, Boa Vista, CEP 65590-000 Barreirinhas/MA</td>
+            </tr>
+            <tr>
+              <th scope="row">40</th>
+              <td>IEMA Unidade Vocacional Caxias</td>
+              <td>Avenida General Sampaio, n° 1375 Bairro Morro do Alecrim, Caxias - MA CEP: 65604-090</td>
+            </tr>
+            <tr>
+              <th scope="row">41</th>
+              <td>IEMA Unidade Vocacional Codó</td>
+              <td>Avenida Pantanal, s/n, CEP 65400-000 Codó/MA</td>
+            </tr>
+            <tr>
+              <th scope="row">42</th>
+              <td>IEMA Unidade Vocacional São José de Ribamar</td>
+              <td>Rua Nova, N° 04 Bairro Juçatuba CEP 65100-000 São José de Ribamar/MA</td>
+            </tr>
+            <tr>
+              <th scope="row">43</th>
+              <td>IEMA Vocacional Santa Luzia do Paruá</td>
+              <td>Av. Principal, S/N, Bairro Cidade Nova. CEP 65272-000 Santa Luzia do Paruá/MA</td>
+            </tr>
+            <tr>
+              <th scope="row">44</th>
+              <td>IEMA Unidade Vocacional São Luís – Alemanha</td>
+              <td>Avenida dos Africanos, S/N - Alemanha - São Luís - Maranhão - CEP 65031-000</td>
+            </tr>
+          </tbody>
+        </table>
+
+        <!-- End Table with stripped rows -->
+
       </div>
-      <!-- End Page Title -->
-
-
-      <div class="cardDef p-3">
-        <h5 class="card-title">Quantidade de Inaugurações por Ano</h5>
-        <div id="chart"></div>
-      </div>
-
-      
-     
+    </div>
 
 
 
-      <div class="cardDef">
-        <div class="card-body">
-         
-          <h5 class="card-title">IEMAS PLENOS</h5>
-          <!-- Table with stripped rows -->
-          <table class="table table-striped small">
-            <thead>
-              <tr>
-                <th scope="col">OD</th>
-                <th scope="col">Unidade</th>
-                <th scope="col">Endereço</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <th scope="row">1</th>
-                <td>IEMA Pleno Açailândia</td>
-                <td>Rua Raimundo Pimentel Filho, Quadra 56, Lote 01, Bairro Nova Açailândia II, CEP 65.930-000, Açailândia- Maranhão</td>
-              </tr>
-              <tr>
-                <th scope="row">2</th>
-                <td>IEMA Pleno Alto Alegre do Pindaré</td>
-                <td>Rua do Sol, s/n Bairro Novo - CEP 65398-000 Alto Alegre do Pindaré/MA</td>
-              </tr>
-              <tr>
-                <th scope="row">3</th>
-                <td>IEMA Pleno Amarante do Maranhão</td>
-                <td>Rua do Poco S/N João de Deus. CEP: 65923-000 Amarante do Maranhão/MA</td>
-              </tr>
-              <tr>
-                <th scope="row">4</th>
-                <td>IEMA Pleno Axixá</td>
-                <td>Rodovia BR 402, Povoado Santa Rosa. CEP: 65148-000 Axixá/MA</td>
-              </tr>
-              <tr>
-                <th scope="row">5</th>
-                <td>IEMA Pleno Bacabal</td>
-                <td>Avenida A C Avenida B, Vila Frei Solano. CEP: 65700-000 Bacabal/MA</td>
-              </tr>
-              <tr>
-                <th scope="row">6</th>
-                <td>IEMA Pleno Bacabeira</td>
-                <td>Rua Humberto de Campos, S/N, Centro. CEP 65143-000 Bacabeira/MA</td>
-              </tr>
-              <tr>
-                <th scope="row">7</th>
-                <td>IEMA Pleno Balsas</td>
-                <td>Rodovia MA, 140 Bairro Veneza CEP. 65800-000 Balsas/MA</td>
-              </tr>
-              <tr>
-                <th scope="row">8</th>
-                <td>IEMA Pleno Brejo</td>
-                <td>Rodovia BR 222/MA 034 – km 18 Povoado do Morro Alegre. CEP 65520-000 Brejo/MA</td>
-              </tr>
-              <tr>
-                <th scope="row">9</th>
-                <td>IEMA Pleno Carutapera</td>
-                <td>Travessa Otávio Correa 1190 CEP 65295-000 Bairro SANTA RITA Carutapera/MA</td>
-              </tr>
-              <tr>
-                <th scope="row">10</th>
-                <td>IEMA Pleno Caxias</td>
-                <td>Avenida General Sampaio, s/n, bairro Morro do Alecrim. Cep: 65604-090 – Caxias - Maranhão</td>
-              </tr>
-              <tr>
-                <th scope="row">11</th>
-                <td>IEMA Pleno Chapadinha</td>
-                <td>Rua Maria Doralice Meneses Pontes, s/n°, Boa Vista, CEP 65220-970 - Chapadinha/MA</td>
-              </tr>
-              <tr>
-                <th scope="row">12</th>
-                <td>IEMA Pleno Codó</td>
-                <td>Avenida Pantanal, s/n, CEP 65400-000 Codó/MA</td>
-              </tr>
-              <tr>
-                <th scope="row">13</th>
-                <td>IEMA Pleno Coelho Neto</td>
-                <td>Rodovia MA-034, Loteamento Bom Sucesso II, Zona Urbana, s/n° - Coelho Neto/MA</td>
-              </tr>
-              <tr>
-                <th scope="row">14</th>
-                <td>IEMA Pleno Colinas – Prof. Graça Saraiva Barroso</td>
-                <td>Rodovia MA 270 - Colinas/MA</td>
-              </tr>
-              <tr>
-                <th scope="row">15</th>
-                <td>IEMA Pleno Coroatá</td>
-                <td>Rodovia MA 020 – Bairro Marior. CEP 65415-000, Coroatá/MA</td>
-              </tr>
-              <tr>
-                <th scope="row">16</th>
-                <td>IEMA Pleno Cururupu</td>
-                <td>Av. Governador Antônio Dino – Rodovia BR 308, Bairro Areia Branca. CEP 65533 Cururupu/MA</td>
-              </tr>
-              <tr>
-                <th scope="row">17</th>
-                <td>IEMA Pleno Imperatriz</td>
-                <td>Rua Dom Evaristo Arnes 1000 Bom Sucesso - CEP 65.905-020 Imperatriz - Maranhão</td>
-              </tr>
-              <tr>
-                <th scope="row">18</th>
-                <td>IEMA Pleno Matões</td>
-                <td>Área Gleba II – Manoel Vieira – Rodovia MA 262 km 01 Bairro Residencial Nova Matões CEP 65645-000 Matões/MA</td>
-              </tr>
-              <tr>
-                <th scope="row">19</th>
-                <td>IEMA Pleno Paço do Lumiar</td>
-                <td>AV.13, S/N, Maiobão, Paço do Lumiar-MA - CEP 65130000</td>
-              </tr>
-              <tr>
-                <th scope="row">20</th>
-                <td>IEMA Pleno Pindaré-Mirim</td>
-                <td>Rodovia MA-320 km 4,5 km – Bairro Belo Horizonte. CEP 65370-000 Pindaré Mirim/MA</td>
-              </tr>
-              <tr>
-                <th scope="row">21</th>
-                <td>IEMA Plneo Porto Franco</td>
-                <td>Praça Dom Marcelino, N 360, Bairro Beira Rio - Porto Franco - Cep: 65970-000</td>
-              </tr>
-              <tr>
-                <th scope="row">22</th>
-                <td>IEMA Pleno Presidente Dutra</td>
-                <td>Br 135, Santa Maria. CEP 65760-000 Presidente Dutra/MA</td>
-              </tr>
-              <tr>
-                <th scope="row">23</th>
-                <td>IEMA Pleno Santa Helena - Newton Bello</td>
-                <td>Rua Maria Ferreira, s/n°, Caema - Santa Helena/MA</td>
-              </tr>
-              <tr>
-                <th scope="row">24</th>
-                <td>IEMA Pleno Santa Inês</td>
-                <td>Avenida Brasil, S/N, Bairro Sol Nascente, CEP 65300-000 Santa Inês/MA</td>
-              </tr>
-              <tr>
-                <th scope="row">25</th>
-                <td>IEMA Pleno Santa Luzia do Paruá</td>
-                <td>Av. Principal, S/N, Bairro Cidade Nova. CEP 65272-000 Santa Luzia do Paruá/MA</td>
-              </tr>
-              <tr>
-                <th scope="row">26</th>
-                <td>IEMA Pleno São Domingos</td>
-                <td>Rua São Francisco, SN - Bairro Peniel - São Domingos do Maranhão – MA CEP: 65790-000</td>
-              </tr>
-              <tr>
-                <th scope="row">27</th>
-                <td>IEMA Pleno São José de Ribamar</td>
-                <td>Av. Panaquatira, 824 – Vila Roseana, Bairro Belo Horizonte. CEP 65110-000 São José de Ribamar/MA</td>
-              </tr>
-              <tr>
-                <th scope="row">28</th>
-                <td>IEMA Pleno São Luís – Tamancão</td>
-                <td>R. do Apicum, 6-198 - Anjo da Guarda, São Luís – MA</td>
-              </tr>
-              <tr>
-                <th scope="row">29</th>
-                <td>IEMA Pleno São Luís – Bacelar Portela</td>
-                <td>R. Jorge Damous Bairro Vila Ivar Saldanha nº 120J – São Luís/MA</td>
-              </tr>
-              <tr>
-                <th scope="row">30</th>
-                <td>IEMA Pleno São Luís – Centro</td>
-                <td>Rua Oswaldo Cruz, S/N, Centro – São Luís/MA</td>
-              </tr>
-              <tr>
-                <th scope="row">31</th>
-                <td>IEMA Pleno São Luís – Desembargador Sarney</td>
-                <td>Avenida Lourenço Vieira da Silva, S/Nº, Bairro Primavera-Cohatrac, São Luís/MA</td>
-              </tr>
-              <tr>
-                <th scope="row">32</th>
-                <td>IEMA Pleno São Vicente Ferrer</td>
-                <td>Rua Humberto de Campos, s/n - Bairro Matriz CEP: 65210-000 São Vicente Ferrer/MA</td>
-              </tr>
-              <tr>
-                <th scope="row">33</th>
-                <td>IEMA Pleno Tuntum</td>
-                <td>Rodovia BR 226 – km 339 – Povoado Belém. CEP 65763-000 Tuntum/MA</td>
-              </tr>
-              <tr>
-                <th scope="row">34</th>
-                <td>IEMA Pleno Vargem Grande</td>
-                <td>Rodovia BR-222 – km 160 – Povoado Paulica. CEP 65430-000 Vargem Grande/MA</td>
-              </tr>
-              <tr>
-                <th scope="row">35</th>
-                <td>IEMA Pleno Vitória do Mearim</td>
-                <td>Avenida MA 014 – Vila da Paz – CEP 65350-000 Vitória do Mearim/MA</td>
-              </tr>
-              <tr>
-                <th scope="row">36</th>
-                <td>IEMA Pleno Zé Doca</td>
-                <td>Rua Bahia, S/N, Bairro São Francisco, CEP 65365-000 Zé Doca/MA</td>
-              </tr>
-              <tr>
-                <th scope="row">37</th>
-                <td>IEMA Unidade Vocacional São Luís – Alegria</td>
-                <td>Rua V, nº 02, Bairro Recanto dos Signos, Alegria, São Luís/MA</td>
-              </tr>
-              <tr>
-                <th scope="row">38</th>
-                <td>IEMA Unidade Vocacional São Luís - Itaqui Bacanga</td>
-                <td>Travessa São Domingos, S/N, Itaqui Bacanga - CEP 65085-365 São Luís/MA</td>
-              </tr>
-              <tr>
-                <th scope="row">39</th>
-                <td>IEMA Unidade Vocacional Barreirinhas</td>
-                <td>Avenida Rodoviária S/N, Boa Vista, CEP 65590-000 Barreirinhas/MA</td>
-              </tr>
-              <tr>
-                <th scope="row">40</th>
-                <td>IEMA Unidade Vocacional Caxias</td>
-                <td>Avenida General Sampaio, n° 1375 Bairro Morro do Alecrim, Caxias - MA CEP: 65604-090</td>
-              </tr>
-              <tr>
-                <th scope="row">41</th>
-                <td>IEMA Unidade Vocacional Codó</td>
-                <td>Avenida Pantanal, s/n, CEP 65400-000 Codó/MA</td>
-              </tr>
-              <tr>
-                <th scope="row">42</th>
-                <td>IEMA Unidade Vocacional São José de Ribamar</td>
-                <td>Rua Nova, N° 04 Bairro Juçatuba CEP 65100-000 São José de Ribamar/MA</td>
-              </tr>
-              <tr>
-                <th scope="row">43</th>
-                <td>IEMA Vocacional Santa Luzia do Paruá</td>
-                <td>Av. Principal, S/N, Bairro Cidade Nova. CEP 65272-000 Santa Luzia do Paruá/MA</td>
-              </tr>
-              <tr>
-                <th scope="row">44</th>
-                <td>IEMA Unidade Vocacional São Luís – Alemanha</td>
-                <td>Avenida dos Africanos, S/N - Alemanha - São Luís - Maranhão - CEP 65031-000</td>
-              </tr>
-            </tbody>
-          </table>
-          
-          <!-- End Table with stripped rows -->
-
-        </div>
-      </div>
 
 
-    </main>
-    <!-- End #main -->
-
-    <!-- ======= Footer ======= -->
-    <footer id="footer" class="footer">
-      <img src="assets/img/logo_gov_maranhao_rodape.png" alt="Logo do Governo do Maranhão">
-    </footer>
-    <!-- End Footer -->
-
-    <a
-      href="#"
-      class="back-to-top d-flex align-items-center justify-content-center"
-      ><i class="bi bi-arrow-up-short"></i
-    ></a>
-
-    <!-- Vendor JS Files -->
-    <script src="assets/vendor/apexcharts/apexcharts.min.js"></script>
-    <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-    <script src="assets/vendor/chart.js/chart.umd.js"></script>
-    <script src="assets/vendor/echarts/echarts.min.js"></script>
-    <script src="assets/vendor/quill/quill.js"></script>
-    <script src="assets/vendor/simple-datatables/simple-datatables.js"></script>
-    <script src="assets/vendor/tinymce/tinymce.min.js"></script>
-    <script src="assets/vendor/php-email-form/validate.js"></script>
-
-    <!-- Template Main JS File -->
-    <script src="assets/js/main.js"></script>
 
 
-    <script>
-      // Dados
-      const anos = [2016, 2017, 2018, 2020, 2021, 2022, 2023, 2024];
-      const quantidades = [3, 4, 6, 4, 6, 10, 1, 10];
 
-      // Cálculo da Linha de Tendência - Interpolando entre os pontos
-      const linhaTendencia = quantidades.map((_, index) => quantidades[index]);
 
-      var options = {
-          chart: {
-              type: 'line', // Tipo do gráfico
-              height: 350,
-              zoom: {
-                  enabled: false
-              },
-              toolbar: {
-                  show: true
-              }
-          },
-          series: [{
-              name: 'Quantidade',
-              type: 'column', // Gráfico de colunas
-              data: quantidades // Dados da quantidade
-          }, {
-              name: 'Linha de Tendência',
-              type: 'line', // Linha de tendência
-              data: linhaTendencia // Dados da linha de tendência
-          }],
-          xaxis: {
-              categories: anos, // Anos como categorias no eixo X
-          },
-          yaxis: [{
-              title: {
-                  text: 'Quantidade'
-              }
-          }],
-          title: {
-              //text: 'Quantidade de Implementações por Ano',
-              align: 'center'
-          },
-          legend: {
-              position: 'top',
-              horizontalAlign: 'left',
-          },
-          dataLabels: {
-              enabled: false // Desabilita os rótulos de dados
-          },
-          stroke: {
-              width: [0, 4], // Define a espessura da linha da coluna e da linha de tendência
-              curve: 'smooth' // Deixa a linha de tendência suave
-          },
-          markers: {
-              size: 0 // Oculta os marcadores da linha de tendência
-          }
+
+
+
+
+  </main>
+  <!-- End #main -->
+
+  <!-- ======= Footer ======= -->
+  <footer id="footer" class="footer">
+    <img src="assets/img/logo_gov_maranhao_rodape.png" alt="Logo do Governo do Maranhão">
+  </footer>
+  <!-- End Footer -->
+
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i
+      class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/apexcharts/apexcharts.min.js"></script>
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/chart.js/chart.umd.js"></script>
+  <script src="assets/vendor/echarts/echarts.min.js"></script>
+  <script src="assets/vendor/quill/quill.js"></script>
+  <script src="assets/vendor/simple-datatables/simple-datatables.js"></script>
+  <script src="assets/vendor/tinymce/tinymce.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+
+  <script>
+
+    
+    //============================= grafics 01 ok ========================//
+
+ // Dados da nova tabela
+ var newData = {
+      years: ['2016', '2017', '2018', '2020', '2021', '2022', '2023', '2024'],
+      quantities: [3, 4, 6, 4, 6, 10, 1, 10]
+    };
+
+    // Configuração do gráfico de colunas
+    var options1 = {
+      chart: {
+        type: 'bar',
+        height: 400
+      },
+      series: [{
+        name: 'Quantidade',
+        data: newData.quantities
+      }],
+      xaxis: {
+        categories: newData.years,
+        title: {
+          text: 'Ano'
+        }
+      },
+      yaxis: {
+        title: {
+          text: 'Quantidade'
+        }
+      },
+      title: {
+        //text: 'Evolução de matrículas por ano',
+        align: 'center'
       }
+    };
 
-      var chart = new ApexCharts(document.querySelector("#chart"), options);
-      chart.render();
+    // Renderizando o segundo gráfico
+    var chart1 = new ApexCharts(document.querySelector("#chart1"), options1);
+    chart1.render();
+
+
+        //============================= grafics 02 ok ========================//
+
+ // Dados da nova tabela
+ var newData2 = {
+      years: ['2016', '2017', '2018', '2020', '2021', '2022', '2023', '2024'],
+      quantities: [3, 7, 13, 17, 23, 33, 34, 44]
+    };
+
+
+
+    // Configuração do gráfico de colunas
+    var options2 = {
+      chart: {
+        type: 'bar',
+        height: 400
+      },
+      series: [{
+        name: 'Quantidade',
+        data: newData2.quantities
+      }],
+      xaxis: {
+        categories: newData2.years,
+        title: {
+          text: 'Ano'
+        }
+      },
+      yaxis: {
+        title: {
+          text: 'Quantidade'
+        }
+      },
+      title: {
+        //text: 'Evolução de matrículas por ano',
+        align: 'center'
+      }
+    };
+
+    // Renderizando o segundo gráfico
+    var chart2 = new ApexCharts(document.querySelector("#chart2"), options2);
+    chart2.render();
+
+
   </script>
 
 
 
-  </body>
+</body>
+
 </html>
